@@ -1,0 +1,261 @@
+html {
+    font-size: 100%;
+}
+
+html, body{
+    width:100%;
+    overflow-x:hidden;
+    }
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 120px;
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+#ourServices {
+    color: white;
+}
+
+#mainSection {
+    background-image: url('salonimage.jpeg');
+    width: 100%;
+    height: 700px;
+}
+
+#mainSection h1 {
+    color: white;
+    font-size: 7rem;
+    font-family: 'Anton', sans-serif;
+    width: 400px;
+    padding: 100px 500px 50px 200px;
+    text-shadow: 4px 4px black;
+}
+
+#mainSection > p {
+    color: white;
+    font-size: 3rem;
+    font-family: 'Anton', sans-serif;
+    padding: 0 0 0 200px;
+    text-shadow: 3px 3px black;
+}
+
+#mainSection > button {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    margin: 50px 0 0 200px;
+}
+
+#qualityList {
+    display: flex;
+    margin: 50px 120px;
+}
+
+#qualityList section {
+    padding: 100px 50px 100px 0;
+    border-bottom: 2px solid black;
+}
+
+#qualityList section h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#qualityList section p {
+    font-size: 1.25rem;
+    padding: 20px 0 0 0;    
+}
+
+#detailsAd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+    height: 600px;
+    
+}
+
+#detailsAd section + section {
+    margin-left: 25px;
+    max-width: 400px;
+}
+
+#detailsAd section img {
+    max-width: 400px;
+}
+
+#detailsAd section p {
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+}
+
+#detailsAd section h3 {
+    font-size: 2rem;
+    padding-bottom: 15px;
+}
+
+#detailsAdLeft {
+    width: 400px;
+}
+
+#detailsAdLeft button {
+    background-color: black;
+    color: white;
+}
+
+#stylistPortraits {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 300px;
+}
+
+#stylistPortraits section img {
+    height: 400px;
+    padding-bottom: 15px;
+}
+
+#stylistPortraits section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#stylistPortraits section span {
+    font-size: 1.5rem;
+    font-family: 'Anton', sans-serif;
+}
+
+.stylistName {
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: rgb(245, 245, 245);
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer section span a {
+    padding-left: 5px;
+}
+
+@media (min-width: 1101px) and (max-width: 1500px) {
+    #stylistPortraits {
+        padding: 0 0;
+    }
+}
+
+@media (min-width:801px) and (max-width: 1100px) {
+    #qualityList {
+        flex-direction: column;
+    }
+    #detailsAd {
+        flex-direction: column;
+    }
+    #stylistPortraits {
+        flex-direction: column;
+        padding: 0 0;
+    }
+    #stylistPortraits section img {
+        padding: 20px 0;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+    #mainSection h1 {
+        padding: 100px 50px;
+    }
+    #mainSection > p {
+        padding: 0 50px;
+    }
+    #mainSection > button {
+        margin: 50px 50px;
+    }
+    #qualityList {
+        flex-direction: column;
+    }
+    #detailsAd {
+        flex-direction: column;
+    }
+    #stylistPortraits {
+        flex-direction: column;
+        padding: 0 0;
+    }
+    #stylistPortraits section img {
+        padding: 20px 0;
+    }
+    .stylistName {
+        border-bottom: 0px solid black;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 20px ;
+    }
+    nav ul li {
+        padding-top: 8px;
+    }
+    #mainSection h1 {
+        padding: 100px 10px;
+        font-size: 3rem;
+    }
+    #mainSection > p {
+        padding: 0 10px;
+        font-size: 2rem;
+        text-shadow: 4px 4px black;
+    }
+    #mainSection > button {
+        margin: 50px 10px;
+    }
+    #qualityList {
+        flex-direction: column;
+        margin: 20px 20px;
+    }
+    #qualityList section {
+        padding: 100px 0;
+        border-bottom: 2px solid black;
+    }
+    #detailsAd {
+        flex-direction: column;
+    }
+    #detailsAdLeft {
+        width: 300px;
+    }
+    #detailsAd section img {
+        width: 300px;
+    }
+    #detailsAd section p {
+        font-size: 1rem;
+        padding-bottom: 15px;
+    }
+    
+    #detailsAd section h3 {
+        font-size: 1.5rem;
+        padding-bottom: 15px;
+    }
+    #stylistPortraits {
+        flex-direction: column;
+        padding: 0 0;
+    }
+    #stylistPortraits section img {
+        padding: 20px 0;
+    }
+    .stylistName {
+        border-bottom: 0px solid black;
+    }
+    footer {
+        flex-direction: column;
+    }
+}
