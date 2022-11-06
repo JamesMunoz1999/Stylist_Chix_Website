@@ -24,6 +24,8 @@ a {
 
 #mainSection {
     background-image: url('salonimage.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 700px;
 }
@@ -207,6 +209,9 @@ footer section span a {
     nav ul li {
         padding-top: 8px;
     }
+    #mainSection {
+        height: 500px;
+    }
     #mainSection h1 {
         padding: 100px 10px;
         font-size: 3rem;
@@ -232,17 +237,18 @@ footer section span a {
     }
     #detailsAdLeft {
         width: 300px;
+        margin-left: 25px;
     }
     #detailsAd section img {
         width: 300px;
     }
     #detailsAd section p {
-        font-size: 1rem;
+        font-size: 1.5rem;
         padding-bottom: 15px;
     }
     
     #detailsAd section h3 {
-        font-size: 1.5rem;
+        font-size: 2rem;
         padding-bottom: 15px;
     }
     #stylistPortraits {
